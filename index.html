@@ -15,14 +15,14 @@
     }
 
     header {
-      padding: 85px;
+      padding: 30px;
       background: #fff;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
       cursor: pointer;
       position: absolute;
@@ -46,30 +46,45 @@
       line-height: 1.6;
     }
 
-    .social-links {
+    .button-container {
       margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
     }
 
-    .social-links a {
-      margin: 0 10px;
+    .button {
+      text-align: center;
+      font-size: 14px;
       display: inline-block;
-      transition: transform 0.2s ease;
+      text-decoration: none;
+      padding: 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      width: 120px;
     }
 
-    .social-links a:hover {
-      transform: scale(1.1);
+    .button:hover {
     }
 
-    .social-links img {
-      width: 40px;
-      height: 40px;
+    .button img {
+      width: 50px;
+      height: 50px;
     }
+
+    .button-text {
+      margin-top: 10px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
     <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h1>Amanuel Asnake</h1>
   </header>
 
   <main>
@@ -78,17 +93,21 @@
       <p>Hi, I'm Amanuel, a high school student at Saint Peter's Prepatory Highschool, I am going in to my final year. Whether I'm coding in Python, building small project, making mods in Minetest or experimenting with Unity and Unreal Engine scenes, I enjoy solving problems and finding differant perspectives to those problems. I'm pretty intrested cybersecurity and already exploring networking fundamentals as already own a Raspberry Pi and have my own small REMOTE-SSH project up on my Github (linked below). Im preparing for college and keeping my eye on schools like Rutgers, University of Maryland, Virgina Tech, and many others on my radar. I make sure balance my academic goals with my curiosity in technology.</p>
     </div>
 
-    <div class="social-links">
-      <a href="https://github.com/amanuelasnake" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    <div class="button-container">
+      <a href="bio.html" class="button">
+        <img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt="Bio">
+        <div class="button-text">Bio</div>
       </a>
-      <a href="https://twitter.com/amanuelasnake_" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+      <a href="projects.html" class="button">
+        <img src="https://cdn-icons-png.flaticon.com/512/2462/2462960.png" alt="Projects">
+        <div class="button-text">Projects</div>
       </a>
-      <a href="mailto:amanuelzinahe@gmail.com">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+      <a href="blog.html" class="button">
+        <img src="https://cdn-icons-png.flaticon.com/128/10139/10139514.png" alt="Blog">
+        <div class="button-text">Blog</div>
       </a>
     </div>
+
   </main>
 
 </body>
