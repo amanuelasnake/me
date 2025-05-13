@@ -25,45 +25,14 @@
       height: 120px;
       border-radius: 50%;
       cursor: pointer;
+      position: absolute;
+      top: 20px;
+      left: 20px;
       transition: transform 0.3s ease;
     }
 
     .profile-pic:hover {
       transform: scale(1.05);
-    }
-
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 10;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      overflow: auto;
-      background-color: rgba(0,0,0,0.8);
-    }
-
-    .modal-content {
-      margin: 10% auto;
-      display: block;
-      max-width: 300px;
-      border-radius: 8px;
-    }
-
-    .modal-content img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .close {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      color: white;
-      font-size: 30px;
-      font-weight: bold;
-      cursor: pointer;
     }
 
     main {
@@ -100,16 +69,8 @@
 <body>
 
   <header>
-    <img src="profile.jpg" alt="Profile Picture" class="profile-pic" id="profilePic">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
   </header>
-
-<!-- Modal -->
-  <div id="imgModal" class="modal">
-    <span class="close" id="closeModal">&times;</span>
-    <div class="modal-content">
-      <img src="profile.jpg" alt="Enlarged Profile">
-    </div>
-  </div>
 
   <main>
     <div class="description">
@@ -129,26 +90,6 @@
       </a>
     </div>
   </main>
-
-  <script>
-    const modal = document.getElementById("imgModal");
-    const profilePic = document.getElementById("profilePic");
-    const closeModal = document.getElementById("closeModal");
-
-    profilePic.onclick = function() {
-      modal.style.display = "block";
-    }
-
-    closeModal.onclick = function() {
-      modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
 
 </body>
 </html>
