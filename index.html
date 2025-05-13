@@ -15,36 +15,33 @@
     }
 
     header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-image: url('header-bg.jpg'); /* Optional */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: rgb(0, 0, 0);
-  padding: 30px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      padding: 30px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: relative;
+      flex-wrap: wrap;
+      gap: 20px;
+      }
     .profile-pic {
       width: 110px;
       height: 110px;
       border-radius: 50%;
       cursor: pointer;
-      position: absolute;
-      top: 20px;
-      left: 20px;
       transition: transform 0.3s ease;
-    }
-
+      }
     .profile-pic:hover {
-      transform: scale(1.05);
-    }
-
+        transform: scale(1.05);
+      }
+    header h1 {
+        font-size: 2em;
+        margin: 0;
+        flex: 1;
+        text-align: center;
+      }
     main {
       padding: 40px 20px;
     }
@@ -88,16 +85,16 @@
       font-weight: bold;
     }
     footer {
-  background: #ffffff;
-  color: #000000;
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 40px;
-}
+      background: #ffffff;
+      color: #000000;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
 
-.footer-socials {
-  margin-bottom: 10px;
-}
+    .footer-socials {
+      margin-bottom: 10px;
+    }
 
 .footer-socials a {
   margin: 0 12px;
